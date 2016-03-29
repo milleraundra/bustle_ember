@@ -1,4 +1,6 @@
 {{outlet}}
+<h1>Admin Panel</h1>
+{{update-article flag=true create="create"}}
 <div class="gallery">
   {{#each model as |article|}}
     {{#link-to 'admin-article' article.id}}

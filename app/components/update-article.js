@@ -5,16 +5,16 @@ export default Ember.Component.extend({
   actions: {
     showUpdateForm() {
       this.set('showUpdateForm', !this.showUpdateForm);
-      console.log(this.showUpdateForm);
     },
-    sendUpdate(article){
+    sendUpdate(article, flag){
+      console.log(flag);
       var params = {
         title: this.get('title'),
         writer: this.get('writer'),
         text: this.get('text'),
         img: this.get('img'),
       };
-      this.sendAction('update', article, params);
+      flag? this.sendAction('create', params): this.sendAction('update', article, params);
     }
   }
 });

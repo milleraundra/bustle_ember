@@ -5,6 +5,7 @@ export default Ember.Component.extend({
   actions: {
     signIn() {
       this.set('userAdmin', !this.userAdmin);
+      this.userAdmin? this.get('router').transitionTo('admin') : this.get('router').transitionTo('index');
     }
   }
 });

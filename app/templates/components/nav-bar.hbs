@@ -1,9 +1,6 @@
 <h1>Bustle</h1>
-<!-- {{#if userAdmin}}
-  <button {{ action 'signIn'}}>Sign-Out</button>
+{{#if userAdmin}}
+  <button {{ action 'signIn'}}>Admin Sign Out</button>
 {{else}}
-  <button {{ action 'signIn'}}>Sign-In</button>
-{{/if}} -->
-{{#link-to 'admin'}}
-  <button>Admin Area</button>
-{{/link-to}}
+  <button {{ action 'signIn'}}>Admin Sign In</button>
+{{/if}}

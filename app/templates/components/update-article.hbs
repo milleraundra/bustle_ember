@@ -1,23 +1,48 @@
 {{#if showUpdateForm}}
   <form>
+
     <div class="form-field">
       <label for="title">Title: </label>
-      {{input value=article.title}}
+      {{#if article}}
+        {{input value=article.title}}
+      {{else}}
+       {{input value=title}}
+      {{/if}}
     </div>
+
     <div class="form-field">
       <label for="writer">Writer: </label>
-      {{input value=article.writer}}
+      {{#if article}}
+        {{input value=article.writer}}
+      {{else}}
+       {{input value=writer}}
+      {{/if}}
     </div>
+
     <div class="form-field">
       <label for="text">Text: </label>
-      {{textarea value=article.text}}
+      {{#if article}}
+        {{input value=article.text}}
+      {{else}}
+       {{input value=text}}
+      {{/if}}
     </div>
+
     <div class="form-field">
       <label for="img">Img: </label>
-      {{input value=article.img}}
+      {{#if article}}
+        {{input value=article.img}}
+      {{else}}
+       {{input value=img}}
+      {{/if}}
     </div>
-    <button {{action 'sendUpdate' article}}>Confirm</button>
+
+    <button {{action 'sendUpdate' article flag}}>Confirm</button>
   </form>
 {{else}}
+  {{#if flag}}
+    <button {{ action 'showUpdateForm' }}>New Article</button>
+  {{else}}
   <button {{ action 'showUpdateForm'}}>Update Article</button>
+  {{/if}}
 {{/if}}
