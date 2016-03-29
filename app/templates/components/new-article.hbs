@@ -1,1 +1,23 @@
-{{yield}}
+{{#if showCreateForm}}
+  <form>
+    <div class="form-field">
+      <label for="title">Title: </label>
+      {{input value=title}}
+    </div>
+    <div class="form-field">
+      <label for="writer">Writer: </label>
+      {{input value=writer}}
+    </div>
+    <div class="form-field">
+      <label for="text">Text: </label>
+      {{textarea value=text}}
+    </div>
+    <div class="form-field">
+      <label for="img">Img: </label>
+      {{input value=img}}
+    </div>
+    <button {{action 'sendCreate' article}}>Confirm</button>
+  </form>
+{{else}}
+  <button {{ action 'showCreateForm'}}>Create Article</button>
+{{/if}}
