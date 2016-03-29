@@ -2,6 +2,8 @@
 <h2>List of Articles:</h2>
 <div class="gallery">
   {{#each model as |article|}}
-    {{}}
+    {{#link-to 'article' article.id}}
+    {{article-tile article=article}}
+    {{/link-to}}
   {{/each}}
 </div>

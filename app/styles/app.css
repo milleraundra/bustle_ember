@@ -1,0 +1,12 @@
+.gallery{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.article {
+  margin-right: 50px;
+}
+img {
+  height: 400px;
+  width: 400px;
+}

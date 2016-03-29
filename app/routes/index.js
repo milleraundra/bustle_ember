@@ -4,7 +4,8 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   model() {
     return this.store.findAll('article');
-  }
+  },
+  
   actions: {
     createArticle(){
       var random = Math.floor(Math.random()*10 + 1);

@@ -1,0 +1,9 @@
+{{outlet}}
+<h1>{{model.tile}}</h1>
+<h2>Written by: {{model.writer}}</h2>
+<h3>{{model.date}}</h3>
+<img src="{{model.img}}" />
+<p>{{model.text}}</p>
+{{#link-to 'index'}}
+  <button>Home</button>
+{{/link-to}}
