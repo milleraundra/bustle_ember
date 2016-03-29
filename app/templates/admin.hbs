@@ -1,6 +1,7 @@
 {{outlet}}
 <h1>Admin Panel</h1>
 {{new-article create="create"}}
+{{article-search search="search"}}
 <div class="gallery">
   {{#each model as |article|}}
     {{#link-to 'admin-article' article.id}}

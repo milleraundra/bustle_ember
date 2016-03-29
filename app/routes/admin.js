@@ -1,8 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model() {
-    return this.store.findAll('article');
+  model(query) {
+    return this.store.filter('article', function(article){
+        return article.get('title') === 'Horsey';
+            });
   },
   actions: {
     create(params){
@@ -12,6 +14,11 @@ export default Ember.Route.extend({
       var newArticle = this.store.createRecord('article', params);
       newArticle.save();
       this.transitionTo('admin');
+    },
+    search(query) {
+      console.log(query instanceof String);
+      this.model(query);
+      console.log(this.model(query));
     }
   }
 });
