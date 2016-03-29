@@ -1,6 +1,7 @@
 <h1>Bustle</h1>
-{{#if userAdmin}}
-  <button {{ action 'signIn'}}>Admin Sign Out</button>
-{{else}}
-  <button {{ action 'signIn'}}>Admin Sign In</button>
-{{/if}}
+<ul class="nav">
+{{#link-to 'index'}}<li>Home</li>{{/link-to}}
+{{#link-to 'about'}}<li>About</li>{{/link-to}}
+{{#link-to 'contact'}}<li>Contact</li>{{/link-to}}
+{{#link-to 'admin'}}<li>Admin</li>{{/link-to}}
+</ul>

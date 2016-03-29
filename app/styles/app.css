@@ -17,3 +17,12 @@ form{
 .form-field {
   margin-top: 20px;
 }
+.nav {
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+h1{
+  text-align: center;
+}
