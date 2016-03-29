@@ -4,6 +4,9 @@
 <h3>{{model.date}}</h3>
 <img src="{{model.img}}" />
 <p>{{model.text}}</p>
+
+{{update-article article=model update="editRecord"}}
+
 {{#link-to 'index'}}
   <button>Home</button>
 {{/link-to}}

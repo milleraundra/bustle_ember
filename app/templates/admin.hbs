@@ -1,0 +1,8 @@
+{{outlet}}
+<div class="gallery">
+  {{#each model as |article|}}
+    {{#link-to 'admin-article' article.id}}
+    {{article-tile article=article}}
+    {{/link-to}}
+  {{/each}}
+</div>

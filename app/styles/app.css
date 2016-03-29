@@ -10,3 +10,10 @@ img {
   height: 400px;
   width: 400px;
 }
+form{
+  padding: 20px;
+  border: 1px dotted black;
+}
+.form-field {
+  margin-top: 20px;
+}

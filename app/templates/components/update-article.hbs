@@ -1,0 +1,23 @@
+{{#if showUpdateForm}}
+  <form>
+    <div class="form-field">
+      <label for="title">Title: </label>
+      {{input value=article.title}}
+    </div>
+    <div class="form-field">
+      <label for="writer">Writer: </label>
+      {{input value=article.writer}}
+    </div>
+    <div class="form-field">
+      <label for="text">Text: </label>
+      {{textarea value=article.text}}
+    </div>
+    <div class="form-field">
+      <label for="img">Img: </label>
+      {{input value=article.img}}
+    </div>
+    <button {{action 'sendUpdate' article}}>Confirm</button>
+  </form>
+{{else}}
+  <button {{ action 'showUpdateForm'}}>Update Article</button>
+{{/if}}
