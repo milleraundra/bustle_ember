@@ -1,7 +1,6 @@
 # Bustle-ember
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This project is an attempt to replicate the basic structure and interface of [Bustle](http://www.bustle.com/). It is a school project created in order to practice using Ember routes, computed properties, and helpers. 
 
 ## Prerequisites
 
@@ -13,41 +12,21 @@ You will need the following things properly installed on your computer.
 * [Ember CLI](http://www.ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
-## Installation
+## Installation / Deployment
 
 * `git clone <repository-url>` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
-
-## Running / Development
-
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
+## Support and contact details
 
-Make use of the many generators for code, try `ember help generate` for more details
+If you have any questions, concerns, or suggestions, contact me directly at miller.aundra@gmail.com. Pull requests can be submitted directly to milleraundra on GitHub.
 
-### Running Tests
+### License
 
-* `ember test`
-* `ember test --server`
+The MIT License (MIT)
 
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+Copyright (c) 2016 Aundra Miller
